@@ -186,13 +186,13 @@ int main(){
     
 
 // ------Half Pyramid Pattern--------//
-// for (int row =0; row <4; row++){
-//     for(int col = 0; col<row+1; col++){
-//         cout<<" * ";
-//     }
-//     //-------ye mai bhul jata hu------//
-//     cout<<endl;
-// }
+for (int row =0; row <4; row++){
+    for(int col = 0; col<row+1; col++){
+        cout<<" * ";
+    }
+    //-------ye mai bhul jata hu------//
+    cout<<endl;
+}
 
 // int n;
 // cout<<"Enter the number of rows: ";
