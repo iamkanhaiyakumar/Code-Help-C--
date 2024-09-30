@@ -9,6 +9,7 @@ int main(){
     //input from user
     cin >> marks;
     cout<<"Your marks are: "<<marks<<endl;
+    \
 
     return 0;
 }
