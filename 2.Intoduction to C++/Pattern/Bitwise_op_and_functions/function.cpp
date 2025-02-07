@@ -16,16 +16,33 @@ using namespace std;
 // void print2katable(){
 
 //*****parameter*****//
-void printNkatable(int n){
+// void printNkatable(int n){
 
 
-    for (int i=1; i<=10; i++){
-        // cout<<2*i <<endl;
-        cout<<n*i << endl;
+//     for (int i=1; i<=10; i++){
+//         // cout<<2*i <<endl;
+//         cout<<n*i << endl;
+//     }
+// }
+
+
+///*******Find AP *******/
+
+// int calculateAP(int a, int l, int n){
+//     int ans = ((n)*(a+l))/2;
+//     return ans;
+// }
+
+
+//******Fine prime *****/
+
+bool isPrime(int num){
+    for (int i=2; i<=(num-1); i++ ){
+        if(num % i ==0)
+        //not prime
+        return false;
     }
 }
-
-
 
 
 int main()
@@ -40,7 +57,34 @@ int main()
 
     // print2katable();
 
-    printNkatable(5);
+    // printNkatable(15);
+     
+    // int a = 2;
+    // int l = 10;
+    // int n = 5;
+
+    // int ans = calculateAP(a,l,n);
+
+    // cout << ans << endl;
+
+
+    //prime number
+
+
+    int number;
+    cout<<"Enter the number"<<endl;
+    cin>> number;
+
+    bool ans = isPrime( number);
+    if(ans == true){
+        cout<<number<<" is Prime";
+    }
+
+    else{
+        cout<<number<< " is Not Prime";
+    }
+
+
 
     
     return 0;
