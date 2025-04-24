@@ -16,7 +16,7 @@ void print (int arr[], int size){
 
 void multiply(int arr[], int n){
     for(int i=0; i<n; i++){
-        arr[i] = arr[i]*5;
+        arr[i] = arr[i] * 5;
     }
 }
 
@@ -37,10 +37,7 @@ int main(){
      print(arr,size);
 
 
-
-
-
-
+     
     //****creation**** */
     // int aar[5];
     // int brr[]; //Error: Array size missing

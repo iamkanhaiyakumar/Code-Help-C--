@@ -4,27 +4,28 @@ using namespace std;
 
 // //**Check the target number in the array**//
 
-// bool checkTarget (int arr[], int size, int target){
-//     // traverse the entire array
-//     for(int i =0; i<size; i++)
-//     if(arr[i] == target){
-//         return true;
-//     }
-//     return false;
-//     }
+bool checkTarget (int arr[], int size, int target){
+    // traverse the entire array
+    for(int i =0; i<size; i++)
+    if(arr[i] == target){
+        return true;
+    }
+    return false;
+    }
 
 
 // **Find the MAX number *****//
-    // int findMax(int arr[], int size){
-    //     int maxAns =INT_MIN;
-    //     for(int i =0; i<size; i++){
-    //         maxAns = max(maxAns, arr[i]);
-            // if(arr[i]>maxAns){
-            //     maxAns = arr[i];
-            // }
-    //     }
-    //     return maxAns;
-    // }
+
+    int findMax(int arr[], int size){
+        int maxAns =INT_MIN;
+        for(int i =0; i<size; i++){
+            maxAns = max(maxAns, arr[i]);
+            if(arr[i]>maxAns){
+                maxAns = arr[i];
+            }
+        }
+        return maxAns;
+    }
 
 //**Find the MIN number *****//
 //  int findMin(int arr[], int size){
@@ -94,7 +95,7 @@ int main(){
     // }
 
 //**Reverse the array ////
-    reverseArray(arr, size);
+    // reverseArray(arr, size);
 
 //**Find the 0's and 1's in the array****////
 // printZeroAndOnes(arr,size);
@@ -111,19 +112,19 @@ int main(){
     
 //**Find the MAX number *****//
 
-    // int ans = findMax(arr, size);
-    // cout<<"ans = "<<ans<<endl;
-    // cout <<"The max number is "<<findMax(arr, size)<<endl;
+    int ans1 = findMax(arr, size);
+    cout<<"ans = "<< ans1 <<endl;
+    cout <<"The max number is "<<findMax(arr, size)<<endl;
     
 
  //**Check the target number in the array**//
 
-    // int target = 30;
+    int target = 30;
     
-    // bool ans = checkTarget(arr, size, target);
+    bool ans = checkTarget(arr, size, target);
 
-    // cout<<checkTarget(arr, size, target)<<endl;
-    // cout<<"ans = "<<ans<<endl;
+    cout<<checkTarget(arr, size, target)<<endl;
+    cout<<"ans = "<<ans<<endl;
 
 
 
