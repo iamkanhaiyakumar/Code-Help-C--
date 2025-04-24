@@ -17,7 +17,6 @@
 //      for(int i =0; i<n; i++){
 //          cout<<arr[i]<<" ";
 //      }
-
 //  }
 
 // void sortZeroOne(int arr[],int n){
@@ -41,19 +40,17 @@
 //         arr[i] = 1;
 //     }
 // }
-void sortZeroOne(int arr[], int n) {
-    int zeroCount = 0;
-    // Counting 0s
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == 0) {
-            zeroCount++;
-        }
-    }
-
-    // Insertion of 0s and 1s
-    fill(arr, arr + zeroCount, 0);
-    fill(arr + zeroCount, arr + n, 1);
-
+// void sortZeroOne(int arr[], int n) {
+//     int zeroCount = 0;
+//     // Counting 0s
+//     for (int i = 0; i < n; i++) {
+//         if (arr[i] == 0) {
+//             zeroCount++;
+//         }
+//     }
+//     *****//fill Insertion of 0s and 1s/*** */
+//     fill(arr, arr + zeroCount, 0);
+//     fill(arr + zeroCount, arr + n, 1);
 
     // for (int i = 0; i < zeroCount; i++) {
     //     arr[i] = 0;
@@ -61,24 +58,19 @@ void sortZeroOne(int arr[], int n) {
     // for (int i = zeroCount; i < n; i++) {
     //     arr[i] = 1;
     // }
-}
-
-
+// }
  
  int main(){
 
         int arr[] = {0,1,0,1,1,0,1,0,1,0,1,0};
         int n = sizeof(arr)/sizeof(arr[0]);
-        sortZeroOne(arr, n);
+        // sortZeroOne(arr, n);
 
-        // sort(arr, arr+n);// sort inbuilt function
+        sort(arr, arr+n);// sort inbuilt function
 
         for(int i =0; i<n; i++){
             cout<<arr[i]<<" ";
-        }
+        } 
 
-        
-    
- 
     return 0;
  }
