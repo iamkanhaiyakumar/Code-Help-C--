@@ -62,7 +62,7 @@ int main(){
     // }
 
     //taking input for 2D array
-    int arr[2][3]; // Declare a 2D array of size 3x3
+    int arr[3][3]; // Declare a 2D array of size 3x3
     int rowSize = 3;
     int colSize = 4;
 
