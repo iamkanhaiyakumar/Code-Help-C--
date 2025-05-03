@@ -25,7 +25,13 @@ int main(){
 
      // Display the elements of the list
     cout << "Elements in the list: ";
-   
+    list<int>::iterator it = mylist.begin(); // Initialize the iterator to the beginning of the vector
+
+    while( it != mylist.end()) { // Loop until the end of the vector
+        cout << *it << " "; // Dereference the iterator to get the value
+        it++; // Move to the next element
+    }
+    cout << endl;
     cout<<"size of list: "<<mylist.size()<<endl; // Size of the list
 
     cout<<"front element of list: "<<mylist.front()<<endl; // Access the first element
