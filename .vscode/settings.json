@@ -12,7 +12,8 @@
         "xstring": "cpp",
         "vector": "cpp",
         "list": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "unordered_map": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
