@@ -17,6 +17,10 @@ int main(){
 
     d.push_back(40);
 
+    cout <<"element "<< d[0]<<endl; // Accessing the first element
+
+    cout<<d.at(0)<<endl; // Accessing the second element using at()
+
     //iteration
     cout << "Elements in deque: ";
     deque<int>::iterator it= d.begin();
