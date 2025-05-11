@@ -18,9 +18,12 @@ int main(){
     d.push_back(40);
 
     cout <<"element "<< d[0]<<endl; // Accessing the first element
-
+ 
     cout<<d.at(0)<<endl; // Accessing the second element using at()
 
+    d.clear(); // Clear the deque
+
+    
     //iteration
     cout << "Elements in deque: ";
     deque<int>::iterator it= d.begin();
@@ -53,5 +56,9 @@ int main(){
         cout << "Deque is not empty" << endl;
     }
 
+    // cout<<"size"<<d.size()<<endl; // Size of the deque
+
+
+    d.erase(d.begin(), d.end()); // Erase all elements from the deque   
     return 0;
 }
