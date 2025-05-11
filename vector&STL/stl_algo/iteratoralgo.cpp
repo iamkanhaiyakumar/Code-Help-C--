@@ -49,16 +49,16 @@ int main(){
     }
     cout << endl;
 
-    for(int arr: arr){
-        cout << arr << " ";
-    }
-    cout << endl;
+    // for(int arr: arr){
+    //     cout << arr << " ";
+    // }
+    // cout << endl;
 
     //reverse
     reverse(arr.begin(), arr.end());
-    for(int i=0; i<arr.size(); i++){
-        cout << arr[i] << " ";
-    }
+    // for(int i=0; i<arr.size(); i++){
+    //     cout << arr[i] << " ";
+    // }
     cout << endl;
      for(int arr: arr){
         cout << arr << " ";
@@ -68,9 +68,9 @@ int main(){
 
     //rotate
     rotate(arr.begin(), arr.begin()+2, arr.end());
-    for(int i=0; i<arr.size(); i++){
-        cout << arr[i] << " ";
-    }
+    // for(int i=0; i<arr.size(); i++){
+    //     cout << arr[i] << " ";
+    // }
     cout << endl;
      for(int arr: arr){
         cout << arr << " ";
@@ -78,16 +78,45 @@ int main(){
     
     cout << endl;
 
-    //partition
-    partition(arr.begin(), arr.end(), checkEven);
-    for(int i=0; i<arr.size(); i++){
-        cout << arr[i] << " ";
+    //left roate
+    rotate(arr.begin(), arr.begin()+1, arr.end());
+    // for(int i=0; i<arr.size(); i++){
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
+     for(int arr: arr){
+        cout << arr << " ";
+    }
+
+    cout << endl;
+
+    //unique
+    vector<int> arr1 = {1, 2, 2, 3, 4, 4, 5};
+    auto it1 = unique(arr1.begin(), arr1.end());
+    arr1.erase(it1, arr1.end());
+    // for(int i=0; i<arr1.size(); i++){
+    //     cout << arr1[i] << " ";
+    // }
+    // cout << endl;
+
+     for(int arr: arr1){
+        cout << arr << " ";
     }
     cout << endl;
+
+
+    //partition
+    partition(arr.begin(), arr.end(), checkEven);
+    // for(int i=0; i<arr.size(); i++){
+    //     cout << arr[i] << " ";
+    // }
+    // cout << endl;
 
     for(int arr: arr){
         cout << arr << " ";
     }
+
+
 
 
 
