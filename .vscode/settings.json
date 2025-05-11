@@ -15,5 +15,5 @@
         "deque": "cpp",
         "unordered_map": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
 }

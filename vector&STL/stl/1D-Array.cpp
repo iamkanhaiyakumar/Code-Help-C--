@@ -11,6 +11,7 @@ int main(){
     marks.push_back(30); 
     marks.push_back(40);
     marks.push_back(50);
+    marks.push_back(60);
     
 
     cout<<marks[0]<<endl; // Access the first element

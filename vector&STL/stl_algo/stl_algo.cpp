@@ -13,25 +13,83 @@ bool checkEven(int a){
 int main(){
     
     vector<int> arr(5);
-    arr[0] =10;
+    arr[0] =13;
     arr[1] =20;
-    arr[2] =30;
-    arr[3] =40;
-    arr[4] =50;
+    arr[2] =50;
+    arr[3] =44;
+    arr[4] =10;
+
 
     // Using STL algorithms
     for_each(arr.begin(), arr.end(), printDouble);
     cout << endl;
 
     //find
-    int target = 50;
-    auto it = find(arr.begin(), arr.end(), target);
-    cout <<*it << endl;
+    // int target = 40;
+    // auto it = find(arr.begin(), arr.end(), target);
+    // cout <<*it << endl;
 
     //find_if
-
-    find_if(arr.begin(), arr.end(), checkEven);
+    auto it = find_if(arr.begin(), arr.end(), checkEven);
     cout << *it << endl;
+
+    //count
+    int target1 = 20;
+    int ans = count(arr.begin(), arr.end(), target1);
+    cout << ans << endl;    
+
+    //count_if
+    int ans1 = count_if(arr.begin(), arr.end(), checkEven);
+    cout << ans1 << endl;
+
+    //sort
+    sort(arr.begin(), arr.end());
+    for(int i=0; i<arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    for(int arr: arr){
+        cout << arr << " ";
+    }
+    cout << endl;
+
+    //reverse
+    reverse(arr.begin(), arr.end());
+    for(int i=0; i<arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+     for(int arr: arr){
+        cout << arr << " ";
+    }
+
+    cout << endl;
+
+    //rotate
+    rotate(arr.begin(), arr.begin()+2, arr.end());
+    for(int i=0; i<arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+     for(int arr: arr){
+        cout << arr << " ";
+    }
+    
+    cout << endl;
+
+    //partition
+    partition(arr.begin(), arr.end(), checkEven);
+    for(int i=0; i<arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    for(int arr: arr){
+        cout << arr << " ";
+    }
+
+
 
 
 
