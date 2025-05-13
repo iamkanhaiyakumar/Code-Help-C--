@@ -105,7 +105,7 @@ int main(){
     cout << endl;
 
 
-    //partition
+    //partition   
     partition(arr.begin(), arr.end(), checkEven);
     // for(int i=0; i<arr.size(); i++){
     //     cout << arr[i] << " ";
