@@ -19,8 +19,14 @@ int main(){
     arr.push_back(40);
     arr.push_back(50);
 
-    //min and max in a vector
-    
+    //min in a vector
+    int min = *min_element(arr.begin(), arr.end());
+    cout << min << endl; 
+
+    //max_element in a vector
+    auto it = max_element(arr.begin(), arr.end());
+    cout << "Max: "<<*it << endl;
+
 
     return 0;
 }
