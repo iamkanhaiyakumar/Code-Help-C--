@@ -47,14 +47,14 @@ int main(){
     cout << endl;
 
     //iota
-    vector<int> arr3(5);
+    // vector<int> arr3(5);
     
-    iota(arr3.begin(), arr3.end(), 10);
-    cout << "Iota: ";
-    for(int i=0; i<arr3.size(); i++){
-        cout << arr3[i] << " ";
-    }
-    cout << endl;
+    // iota(arr3.begin(), arr3.end(), 10);
+    // cout << "Iota: ";
+    // for(int i=0; i<arr3.size(); i++){
+    //     cout << arr3[i] << " ";
+    // }
+    // cout << endl;
 
 
 
