@@ -7,15 +7,13 @@ void last_occ(int arr[], int n, int target, int &ansIndex){
     int s = 0;
     int e = n - 1;
     
-    
-
     while(s <= e){
         int mid = s + (e - s) / 2;
         if (arr[mid]==target){
             //ans found -> may or may not be the first occurance
              //store and compute 
             ansIndex = mid;
-            //go left
+            //go right 
             s = mid + 1;
         }
         if(target > arr[mid]){
@@ -33,7 +31,7 @@ void last_occ(int arr[], int n, int target, int &ansIndex){
 
 
 int main(){
-    int arr[] = {1, 1,2,  2,2,2,3, 5};
+    int arr[] = {1, 1, 2,2,2,3, 5};
 
     int n = 6;
 
