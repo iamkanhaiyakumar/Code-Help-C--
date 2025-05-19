@@ -13,7 +13,7 @@ void last_occ(int arr[], int n, int target, int &ansIndex){
         int mid = s + (e - s) / 2;
         if (arr[mid]==target){
             //ans found -> may or may not be the first occurance
-            //store and compute 
+             //store and compute 
             ansIndex = mid;
             //go left
             s = mid + 1;
